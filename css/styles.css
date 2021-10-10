@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.app {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Caveat-Bold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Caveat;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Gill-Italic;
+  src: url(../css/fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: Gill-Light;
+  src: url(../css/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../css/fonts/GillSans.ttf);
+}
+nav {
+  position: absolute;
+  margin-left: 970px;
+  height: 50px;
+  margin-top: 25px;
+}
+nav a {
+  font-family: Caveat;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+  padding-right: 50px;
+}
+
+button {
+  background-color: #ffd972;
+  font-family: Caveat;
+  font-size: 25px;
+  width: 158px;
+  height: 52px;
+  border-radius: 15px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.fas {
+  display: none;
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  color: #000;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .fas {
+    display: block;
+    margin-right: 5%;
+  }
+
+  .link-nav {
+    display: none;
+  }
+}
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(242, 92, 84, 0.8)), to(rgba(242, 92, 84, 0.8))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.8), rgba(242, 92, 84, 0.8)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circle-holder {
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.circle-holder .little-circle {
+  position: absolute;
+  width: 167.88px;
+  height: 167.88px;
+  background-color: #fcbcb8;
+  border-radius: 150px;
+  margin-left: 340px;
+  margin-top: -240px;
+  z-index: 0;
+}
+.circle-holder .little-circle .little-text {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 37.77px;
+  width: 107.76px;
+  font-size: 10px;
+  margin-top: 45px;
+  margin-left: 45px;
+  font-family: Gill-Italic;
+}
+.circle-holder .big-circle {
+  width: 357.58px;
+  height: 357.58px;
+  background-color: #ffd972;
+  border-radius: 250px;
+  z-index: 1;
+}
+.circle-holder .big-circle .circle-header {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 30px;
+  width: 163px;
+  font-size: 24px;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-family: Caveat-Bold;
+}
+.circle-holder .big-circle .big-text {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  width: 164px;
+  font-size: 13px;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-family: Gill;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .home .circle-holder .little-circle {
+    margin-left: 260px;
+    margin-top: -300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .circle-holder {
+    height: 357px;
+    width: 257px;
+  }
+  .circle-holder .big-circle {
+    width: 257.81px;
+    height: 257.81px;
+  }
+  .circle-holder .big-circle .circle-header {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 30px;
+    width: 163px;
+    font-size: 17px;
+    margin-top: 50px;
+    margin-left: 75px;
+    font-family: Caveat-Bold;
+  }
+  .circle-holder .big-circle .big-text {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 80px;
+    width: 164px;
+    font-size: 11px;
+    margin-top: 25px;
+    margin-left: 40px;
+    font-family: Gill;
+  }
+  .circle-holder .little-circle {
+    width: 121.04px;
+    height: 121.04px;
+    margin-left: 190px;
+    margin-top: -260px;
+  }
+  .circle-holder .little-circle .little-text {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 37.77px;
+    width: 107.76px;
+    font-size: 8px;
+    margin-top: 35px;
+    margin-left: 15px;
+    font-family: Gill-Italic;
+  }
+}
+footer {
+  position: absolute;
+  font-family: Gill-Italic;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  padding-right: 25px;
+  margin-left: 50px;
+  margin-top: 725px;
+}
+footer a {
+  font-family: Gill-Italic;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  padding-left: 50px;
+  margin-left: 15px;
+}
+footer .facebook {
+  position: absolute;
+  margin-left: 125px;
+}
+footer .instagram {
+  position: absolute;
+  margin-left: 175px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    margin-top: 890px;
+    margin-left: 0px;
+  }
+  footer .facebook {
+    margin-left: 25px;
+  }
+  footer .instagram {
+    margin-left: 75px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    margin-top: 650px;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 375px;
+    margin-left: 10px;
+  }
+  footer a {
+    margin: 20px auto;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  footer .facebook {
+    margin-left: 250px;
+  }
+  footer .instagram {
+    margin-left: 300px;
+  }
+}

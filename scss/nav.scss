@@ -1,0 +1,47 @@
+nav {
+  position: absolute;
+  margin-left: 970px;
+  height: 50px;
+  margin-top: 25px;
+  a {
+    font-family: Caveat;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    padding-right: 50px;
+  }
+}
+
+button {
+  background-color: #ffd972;
+  font-family: Caveat;
+  font-size: 25px;
+  width: 158px;
+  height: 52px;
+  border-radius: 15px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.fas {
+  display: none;
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  color: #000;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .fas {
+    display: block;
+    margin-right: 5%;
+  }
+  .link-nav {
+    display: none;
+  }
+}
