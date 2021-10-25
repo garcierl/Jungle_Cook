@@ -5,7 +5,7 @@ footer {
   text-decoration: none;
   color: #000;
   padding-right: 25px;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 725px;
   a {
     font-family: Gill-Italic;
@@ -27,8 +27,8 @@ footer {
 @media only screen and (max-width: 768px) {
   footer {
     text-align: center;
-    margin-top: 890px;
     margin-left: 0px;
+    margin-top: 120%;
 
     .facebook {
       margin-left: 25px;
@@ -41,20 +41,22 @@ footer {
 
 @media only screen and (max-width: 400px) {
   footer {
-    margin-top: 650px;
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     max-width: 375px;
     margin-left: 10px;
+    margin-top: 750px;
 
     a {
-      margin: 20px auto;
+      margin: auto;
       font-size: 15px;
       display: inline-block;
       text-align: center;
     }
-
+    img {
+      padding-bottom: 30px;
+    }
     .facebook {
       margin-left: 250px;
     }
