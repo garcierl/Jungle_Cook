@@ -20,8 +20,9 @@ p {
   margin-bottom: 16px;
 }
 
-.app {
+#app {
   height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -48,6 +49,7 @@ nav {
   position: absolute;
   margin-left: 970px;
   height: 50px;
+  width: 500px;
   margin-top: 25px;
 }
 nav a {
@@ -58,13 +60,43 @@ nav a {
   padding-right: 50px;
 }
 
-button {
+.mobile-nav {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: #ffd972;
+  font-size: 75px;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Caveat;
+}
+
+form {
+  display: inline;
+}
+form .nav-btn {
   background-color: #ffd972;
   font-family: Caveat;
   font-size: 25px;
   width: 158px;
   height: 52px;
-  border-radius: 15px;
+  border: 0px solid;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+  display: inline;
 }
 
 .logo {
@@ -75,8 +107,8 @@ button {
 
 .fas {
   display: none;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 25px;
   position: fixed;
   color: #000;
   font-size: 3em;
@@ -86,10 +118,99 @@ button {
   .fas {
     display: block;
     margin-right: 5%;
+    margin-left: 0px;
   }
 
-  .link-nav {
+  nav {
+    margin-left: 0px;
+  }
+  nav a,
+nav form {
     display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .fas {
+    display: block;
+    margin-right: 5%;
+    margin-left: 0px;
+  }
+
+  nav {
+    width: 250px;
+    margin-left: 0px;
+  }
+  nav a,
+nav form {
+    display: none;
+  }
+}
+footer {
+  position: absolute;
+  font-family: Gill-Italic;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  padding-right: 25px;
+  margin-left: 100px;
+  margin-top: 725px;
+}
+footer a {
+  font-family: Gill-Italic;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  padding-left: 50px;
+  margin-left: 15px;
+}
+footer .facebook {
+  position: absolute;
+  margin-left: 125px;
+}
+footer .instagram {
+  position: absolute;
+  margin-left: 175px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 120%;
+  }
+  footer .facebook {
+    margin-left: 25px;
+  }
+  footer .instagram {
+    margin-left: 75px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 375px;
+    margin-left: 10px;
+    margin-top: 750px;
+  }
+  footer a {
+    margin: auto;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  footer img {
+    padding-bottom: 30px;
+  }
+  footer .facebook {
+    margin-left: 250px;
+  }
+  footer .instagram {
+    margin-left: 300px;
   }
 }
 .home {
@@ -225,68 +346,106 @@ button {
     font-family: Gill-Italic;
   }
 }
-footer {
-  position: absolute;
-  font-family: Gill-Italic;
-  font-size: 15px;
-  text-decoration: none;
-  color: #000;
-  padding-right: 25px;
-  margin-left: 50px;
-  margin-top: 725px;
+.login-form {
+  height: 100%;
+  width: 100%;
+  background-color: #ffd972;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer a {
-  font-family: Gill-Italic;
-  font-size: 15px;
-  text-decoration: none;
-  color: #000;
-  padding-left: 50px;
-  margin-left: 15px;
+.login-form .login-sheet {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer .facebook {
-  position: absolute;
-  margin-left: 125px;
+.login-form .login-sheet .login_btn {
+  margin-left: 20px;
+  background-color: #ffd972;
+  font-family: Caveat;
+  font-size: 25px;
+  width: 209px;
+  height: 52px;
+  border: 0px solid;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
 }
-footer .instagram {
-  position: absolute;
-  margin-left: 175px;
+.login-form .sign-up {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-form .sign-up .sign-in-btn {
+  background-color: #ffd972;
+  font-family: Caveat;
+  font-size: 25px;
+  width: 250px;
+  height: 52px;
+  border: 0px solid;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+}
+.login-form .border {
+  content: "";
+  display: block;
+  width: 250px;
+  border-bottom: black solid 3px;
+}
+.login-form input {
+  font-family: Caveat;
+  color: black;
+  display: block;
+  margin-top: 21px;
+  width: 250px;
+  height: 20px;
+  background-color: #ffd972;
+  border: 0;
+}
+.login-form h3 {
+  font-family: Caveat;
+  font-size: 12px;
+}
+.login-form h2 {
+  font-family: Caveat-Bold;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  footer {
-    text-align: center;
-    margin-top: 890px;
-    margin-left: 0px;
+  .login-form {
+    padding-right: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  footer .facebook {
-    margin-left: 25px;
+  .login-form .login-sheet {
+    top: 0;
   }
-  footer .instagram {
-    margin-left: 75px;
+  .login-form .sign-up {
+    bottom: 0;
   }
 }
 @media only screen and (max-width: 400px) {
-  footer {
-    margin-top: 650px;
-    font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 375px;
-    margin-left: 10px;
+  .login-form {
+    padding-top: 15%;
+    padding-right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  footer a {
-    margin: 20px auto;
-    font-size: 15px;
-    display: inline-block;
-    text-align: center;
+  .login-form .login-sheet {
+    top: 0;
   }
-  footer .facebook {
-    margin-left: 250px;
-  }
-  footer .instagram {
-    margin-left: 300px;
+  .login-form .sign-up {
+    bottom: 0;
   }
 }
