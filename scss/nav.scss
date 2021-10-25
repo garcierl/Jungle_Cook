@@ -2,6 +2,7 @@ nav {
   position: absolute;
   margin-left: 970px;
   height: 50px;
+  width: 500px;
   margin-top: 25px;
   a {
     font-family: Caveat;
@@ -12,13 +13,35 @@ nav {
   }
 }
 
-button {
+.mobile-nav {
+  display: none;
+  position: absolute;
+  z-index: 100;
   background-color: #ffd972;
+  font-size: 75px;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: black;
   font-family: Caveat;
-  font-size: 25px;
-  width: 158px;
-  height: 52px;
-  border-radius: 15px;
+}
+
+form {
+  display: inline;
+  .nav-btn {
+    background-color: #ffd972;
+    font-family: Caveat;
+    font-size: 25px;
+    width: 158px;
+    height: 52px;
+    border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.16);
+    display: inline;
+  }
 }
 
 .logo {
@@ -29,8 +52,8 @@ button {
 
 .fas {
   display: none;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 25px;
   position: fixed;
   color: #000;
   font-size: 3em;
@@ -40,8 +63,29 @@ button {
   .fas {
     display: block;
     margin-right: 5%;
+    margin-left: 0px;
   }
-  .link-nav {
-    display: none;
+  nav {
+    margin-left: 0px;
+    a,
+    form {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .fas {
+    display: block;
+    margin-right: 5%;
+    margin-left: 0px;
+  }
+  nav {
+    width: 250px;
+    margin-left: 0px;
+    a,
+    form {
+      display: none;
+    }
   }
 }
