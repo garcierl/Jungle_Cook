@@ -11,12 +11,21 @@
  <body>
      <img class="logo"src="../images/logo.svg" alt="logo" width="167px" height="55px" >
      <nav class="link-nav">
-        <a id="Home" href="#">Home</a>
-        <a id="Browse" href="#">Browse</a>
-        <a id="Create" href="#">Create</a>
-        <button type="button" class="login">Login</button>
+        <a id="Home" href="#/home">Home</a>
+        <a id="Browse" href="#/browse">Browse</a>
+        <a id="Create" href="#/create">Create</a>
+        <form action= "index.html?#/login"><input class="nav-btn" type="submit" value="Login"/></form> 
+        <i class=" bars fas fa-bars fa-3x "></i>
      </nav>
-     <nav><i class="fas fa-bars"></i></nav>
+
+    <div class="mobile-nav">
+        <a id="Home" href="#/home">Home</a>
+        <a id="Browse" href="#/browse">Browse</a>
+        <a id="Create" href="#/create">Create</a>
+        <form action= "index.html?#/login"><input class="nav-btn" type="submit" value="Login"/></form> 
+    </div>
+
+
      <footer>
         Copyright &copy; 2019 Jungle Cook 
         <a id="Login" href="#">Login</a>
@@ -28,22 +37,12 @@
         <img class= "instagram" src="../images/instagram.svg" alt="instagram" height="19px" width="19px">  
       </footer> 
 
-     <div class="app">
-         <div class="home">
-            <div class="circle-holder">
-                <div class="little-circle">
-                    <p class="little-text">Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
-                </div>
-                 <div class="big-circle">
-                     <h1 class="circle-header">The Jungle Cook</h1>
-                     <p class="big-text">The home to various 
-                        recipes of your choice. 
-                        Add your own recipe 
-                        today and fill the world 
-                        with joy!</p>
-                 </div>
-             </div>
-         </div>
+     <div id="app">
      </div>
+
+
+     <script src="lib/jquery-3.6.0.min.js"></script>
+     <script src="app/model.js"></script>
+     <script src="app/app.js"></script>
  </body>
 </html>
