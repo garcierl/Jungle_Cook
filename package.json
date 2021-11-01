@@ -1,0 +1,22 @@
+{
+  "name": "jungle_cook",
+  "version": "1.0.0",
+  "description": "https://in-info-web4.informatics.iupui.edu/~garcierl/Jungle_Cook/",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "firebase local serve": "firebase serve --only hosting", "firebase deploy": "firebase deploy --except functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garcierl/Jungle_Cook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garcierl/Jungle_Cook/issues"
+  },
+  "homepage": "https://github.com/garcierl/Jungle_Cook#readme"
+}
