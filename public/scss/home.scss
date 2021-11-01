@@ -1,0 +1,130 @@
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.8),
+      rgba(242, 92, 84, 0.8)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-holder {
+  width: 400px;
+  height: 400px;
+  //background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .little-circle {
+    position: absolute;
+    width: 167.88px;
+    height: 167.88px;
+    background-color: #fcbcb8;
+    border-radius: 150px;
+    margin-left: 340px;
+    margin-top: -240px;
+    z-index: 0;
+
+    .little-text {
+      align-content: center;
+      height: 37.77px;
+      width: 107.76px;
+      font-size: 10px;
+      margin-top: 45px;
+      margin-left: 45px;
+      font-family: Gill-Italic;
+    }
+  }
+
+  .big-circle {
+    width: 357.58px;
+    height: 357.58px;
+    background-color: #ffd972;
+    border-radius: 250px;
+    z-index: 1;
+    .circle-header {
+      align-content: center;
+      height: 30px;
+      width: 163px;
+      font-size: 24px;
+      margin-top: 100px;
+      margin-left: 100px;
+      font-family: Caveat-Bold;
+    }
+
+    .big-text {
+      align-content: center;
+      height: 80px;
+      width: 164px;
+      font-size: 13px;
+      margin-top: 50px;
+      margin-left: 100px;
+      font-family: Gill;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .home {
+    .circle-holder {
+      .little-circle {
+        margin-left: 260px;
+        margin-top: -300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .circle-holder {
+    height: 357px;
+    width: 257px;
+
+    .big-circle {
+      width: 257.81px;
+      height: 257.81px;
+      .circle-header {
+        align-content: center;
+        height: 30px;
+        width: 163px;
+        font-size: 17px;
+        margin-top: 50px;
+        margin-left: 75px;
+        font-family: Caveat-Bold;
+      }
+      .big-text {
+        align-content: center;
+        height: 80px;
+        width: 164px;
+        font-size: 11px;
+        margin-top: 25px;
+        margin-left: 40px;
+        font-family: Gill;
+      }
+    }
+
+    .little-circle {
+      width: 121.04px;
+      height: 121.04px;
+      margin-left: 190px;
+      margin-top: -260px;
+      .little-text {
+        align-content: center;
+        height: 37.77px;
+        width: 107.76px;
+        font-size: 8px;
+        margin-top: 35px;
+        margin-left: 15px;
+        font-family: Gill-Italic;
+      }
+    }
+  }
+}
